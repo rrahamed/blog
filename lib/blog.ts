@@ -35,8 +35,8 @@ export const categoryLabels: Record<BlogPost['category'], string> = {
 }
 
 export const categoryColors: Record<BlogPost['category'], string> = {
-  'web-development': 'bg-indigo-500/20 text-indigo-300 border border-indigo-500/30',
-  'mobile-apps': 'bg-violet-500/20 text-violet-300 border border-violet-500/30',
-  'ai-tech': 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/30',
-  business: 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/30',
+  'web-development': 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/30',
+  'mobile-apps': 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/30',
+  'ai-tech': 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/30',
+  business: 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/30',
 }

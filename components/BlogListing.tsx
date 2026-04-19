@@ -34,10 +34,10 @@ export default function BlogListing({ posts }: BlogListingProps) {
             key={f.value}
             id={`filter-${f.value}`}
             onClick={() => setActive(f.value)}
-            className={`rounded-full px-5 py-2 text-xs font-bold uppercase tracking-wider transition-all duration-300 border backdrop-blur-sm ${
+            className={`rounded-full px-6 py-2.5 text-[10px] font-bold uppercase tracking-[0.2em] transition-all duration-300 border backdrop-blur-md ${
               active === f.value
-                ? 'bg-indigo-600/20 text-white border-indigo-500 shadow-[0_0_20px_rgba(99,102,241,0.3)] scale-105'
-                : 'bg-[#111118]/50 text-[#94a3b8] border-[#1e1e2e]/50 hover:border-indigo-500/40 hover:text-white hover:bg-indigo-500/5'
+                ? 'bg-emerald-500 text-black border-emerald-500 shadow-[0_0_30px_rgba(16,185,129,0.3)] scale-105'
+                : 'bg-white/5 text-gray-400 border-white/5 hover:border-emerald-500/30 hover:text-white hover:bg-emerald-500/5'
             }`}
           >
             {f.label}

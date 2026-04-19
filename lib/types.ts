@@ -19,4 +19,5 @@ export type BlogContentBlock =
   | { type: 'numbers'; items: string[] }
   | { type: 'tip'; label: string; text: string }
   | { type: 'table'; headers: string[]; rows: string[][] }
+  | { type: 'faq'; items: { q: string; a: string }[] }
   | { type: 'cta'; heading: string; body: string; linkText: string; linkHref: string }

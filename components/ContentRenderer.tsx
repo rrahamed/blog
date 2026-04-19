@@ -1,4 +1,5 @@
 import type { BlogContentBlock } from '@/lib/types'
+import FAQSection from './FAQSection'
 
 interface ContentRendererProps {
   blocks: BlogContentBlock[]
@@ -151,6 +152,9 @@ export default function ContentRenderer({ blocks }: ContentRendererProps) {
                 </a>
               </div>
             )
+
+          case 'faq':
+            return <FAQSection key={i} items={block.items} />
 
           default:
             return null

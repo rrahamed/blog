@@ -170,5 +170,41 @@ export const blogs: BlogPost[] = [
       { type: 'paragraph', text: 'The key is to approach the process with clear requirements, thorough evaluation, and a proper contract. Whether you need a single developer for a short-term build or a full dedicated team for a long-term product, Sri Lanka\'s tech talent is ready to deliver.' },
       { type: 'cta', heading: 'Looking to hire a software development team in Sri Lanka?', body: 'Point of Dev is a Sri Lankan software company specialising in web development, mobile apps, and custom digital products. We work with startups and businesses across the UK, Australia, and beyond — delivering professional results on time and within budget.', linkText: 'Get in touch at pointofdev.com', linkHref: 'https://pointofdev.com/#contact' }
     ]
+  },
+  {
+    slug: 'what-is-point-of-dev',
+    title: "What is Point of Dev? Sri Lanka's Fast-Growing Software Company",
+    excerpt: "Point of Dev is a fast-growing Sri Lankan software company building AI-powered digital products. Discover who we are, what we do, and how we can help you build your idea.",
+    category: 'business',
+    date: '2026-04-19',
+    readTime: 5,
+    author: 'Point of Dev Team',
+    tags: ['point of dev', 'software company sri lanka', 'AI digital products', 'web development', 'custom software', 'sri lanka tech'],
+    coverImage: '/blog/what-is-point-of-dev.png',
+    content: [
+      { type: 'paragraph', text: "If you searched for Point of Dev and found this page — welcome. You've found exactly what you were looking for. We are Point of Dev, a software company based in Sri Lanka, and this is our story." },
+      { type: 'h2', text: 'Who is Point of Dev?', id: 'who-we-are' },
+      { type: 'paragraph', text: "Point of Dev is a fast-growing Sri Lankan software company that designs and builds AI-powered digital products. From web applications to custom software solutions, we turn ideas into real, working products — for businesses, startups, and individuals across Sri Lanka and beyond." },
+      { type: 'paragraph', text: "We are proud to be a Sri Lankan tech company growing at a time when the world is paying close attention to what South Asia can build. And we are just getting started." },
+      { type: 'tip', label: 'Our Mission:', text: "Sri Lanka has the talent, the ideas, and the drive. Point of Dev exists to turn that potential into real software that makes a difference." },
+      { type: 'h2', text: 'The story behind Point of Dev', id: 'the-story' },
+      { type: 'paragraph', text: "Like most great things, Point of Dev started with a simple frustration. We saw too many good ideas go nowhere — not because the ideas were bad, but because building software felt out of reach. Too technical. Too expensive. Too complicated." },
+      { type: 'paragraph', text: "So we built a software company that fixes that. A company that meets you where you are — whether you're a beginner with an idea, a business ready to scale, or a developer who needs the right partner." },
+      { type: 'h2', text: 'What does Point of Dev do?', id: 'what-we-do' },
+      { type: 'paragraph', text: "Point of Dev specializes in building AI-powered digital products and software solutions. Our team handles everything — from understanding your idea to designing, developing, and launching your product. We work with clients in Sri Lanka and globally, bringing world-class software development to every project." },
+      { type: 'paragraph', text: "Our services include web development, custom software, mobile applications, and AI-integrated digital products. If you can imagine it, we can help you build it." },
+      { type: 'h2', text: 'Why choose a Sri Lankan software company?', id: 'why-sri-lanka' },
+      { type: 'paragraph', text: "Sri Lanka's tech industry is growing fast — and Point of Dev is at the front of that wave. We combine deep technical knowledge with a genuine understanding of both local and global markets. You get the quality of an international software company, with the personal attention of a local team that truly cares about your success." },
+      { type: 'h2', text: 'Get your next idea built with Point of Dev', id: 'get-started' },
+      { type: 'paragraph', text: "Have an idea? Not sure where to start? Visit our website and let Point of Dev help you figure it out. Whether it's your first digital product or your tenth, our team is ready to help you build something great." },
+      { type: 'cta', heading: 'Ready to turn your idea into a product?', body: "Point of Dev is a Sri Lankan software company specialising in web development, mobile apps, and custom digital products.", linkText: 'Visit pointofdev.com', linkHref: 'https://pointofdev.com/' },
+      { type: 'faq', items: [
+        { q: "What is Point of Dev?", a: "Point of Dev is a fast-growing software company based in Sri Lanka that builds AI-powered digital products and software solutions for businesses and individuals." },
+        { q: "Where is Point of Dev based?", a: "Point of Dev is based in Sri Lanka and serves clients both locally and internationally." },
+        { q: "What services does Point of Dev offer?", a: "Point of Dev offers web development, custom software development, mobile applications, and AI-powered digital products." },
+        { q: "Is Point of Dev good for beginners?", a: "Yes — Point of Dev works with everyone from first-time founders with a new idea to established businesses building their next product." },
+        { q: "How do I contact Point of Dev?", a: "You can visit pointofdev.com to learn more and get in touch with the team." }
+      ]}
+    ]
   }
 ]

@@ -60,45 +60,48 @@ export default async function BlogPostPage({
   const relatedPosts = getRelatedPosts(post.slug, post.category)
 
   return (
-    <main className="min-h-screen bg-[#0a0a0f]">
+    <main className="min-h-screen bg-black uppercase-none">
       {/* ─── Back link ─────────────────────────────────────────────────────── */}
-      <div className="border-b border-[#1e1e2e] px-6 py-4">
+      <div className="border-b border-white/5 px-6 py-6 bg-black">
         <div className="mx-auto max-w-6xl">
           <Link
             href="/blog"
-            className="inline-flex items-center gap-2 text-sm text-[#94a3b8] transition-colors hover:text-indigo-400"
+            className="inline-flex items-center gap-3 text-xs font-bold uppercase tracking-[0.2em] text-gray-500 transition-colors hover:text-emerald-400"
           >
-            ← Back to Blog
+            <div className="h-px w-6 bg-gray-500 transition-all group-hover:bg-emerald-400" />
+            Back to Blog
           </Link>
         </div>
       </div>
 
       {/* ─── Hero ──────────────────────────────────────────────────────────── */}
-      <section className="border-b border-[#1e1e2e] px-6 py-14">
+      <section className="border-b border-white/5 px-6 py-20 bg-black relative overflow-hidden">
+        <div className="absolute left-1/2 top-0 -z-10 h-[300px] w-full -translate-x-1/2 opacity-10 blur-[100px] bg-emerald-500 rounded-full" />
+        
         <div className="mx-auto max-w-3xl text-center">
           {/* Category badge */}
           <span
-            className={`inline-flex items-center rounded-full px-3 py-1 text-xs font-medium ${categoryColors[post.category]}`}
+            className={`inline-flex items-center rounded-full px-4 py-1 text-[10px] font-bold uppercase tracking-widest ${categoryColors[post.category]}`}
           >
             {categoryLabels[post.category]}
           </span>
 
           {/* Title */}
-          <h1 className="mt-5 text-3xl font-bold leading-tight tracking-tight text-[#f1f5f9] sm:text-4xl lg:text-5xl">
+          <h1 className="mt-8 text-4xl font-extrabold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
             {post.title}
           </h1>
 
           {/* Meta row */}
-          <div className="mt-6 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-sm text-[#94a3b8]">
-            <span className="flex items-center gap-1.5">
-              <span className="h-5 w-5 rounded-full bg-indigo-600/40 border border-indigo-500/40 inline-flex items-center justify-center text-[10px] font-bold text-indigo-300">
+          <div className="mt-10 flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-[11px] font-bold uppercase tracking-[0.2em] text-gray-500">
+            <span className="flex items-center gap-2">
+              <div className="h-6 w-6 rounded-full bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-[10px] text-emerald-400">
                 P
-              </span>
+              </div>
               {post.author}
             </span>
-            <span className="h-1 w-1 rounded-full bg-[#94a3b8]" />
+            <div className="h-1 w-1 rounded-full bg-emerald-500/30" />
             <span>{formatDate(post.date)}</span>
-            <span className="h-1 w-1 rounded-full bg-[#94a3b8]" />
+            <div className="h-1 w-1 rounded-full bg-emerald-500/30" />
             <span>{post.readTime} min read</span>
           </div>
         </div>

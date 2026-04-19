@@ -11,7 +11,7 @@ export default function BlogCard({ post }: BlogCardProps) {
   return (
     <Link
       href={`/blog/${post.slug}`}
-      className="group relative flex flex-col overflow-hidden rounded-2xl border border-[#1e1e2e]/50 bg-[#111118]/80 backdrop-blur-md transition-all duration-500 hover:border-indigo-500/40 hover:shadow-[0_0_40px_rgba(99,102,241,0.15)] hover:-translate-y-1.5"
+      className="group relative flex flex-col overflow-hidden rounded-[2rem] border border-white/5 bg-[#080808] transition-all duration-500 hover:border-emerald-500/40 hover:shadow-[0_0_50px_rgba(16,185,129,0.1)] hover:-translate-y-1.5"
     >
       {/* Image container */}
       <div className="relative aspect-[16/10] overflow-hidden">
@@ -20,60 +20,48 @@ export default function BlogCard({ post }: BlogCardProps) {
             src={post.coverImage}
             alt={post.title}
             fill
-            className="object-cover transition-transform duration-700 group-hover:scale-110"
+            className="object-cover transition-transform duration-700 group-hover:scale-105"
           />
         ) : (
-          <div className="h-full w-full bg-gradient-to-br from-indigo-900/50 to-purple-900/50" />
+          <div className="h-full w-full bg-gradient-to-br from-gray-900 to-black" />
         )}
         
         {/* Overlay gradient */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#111118] via-transparent to-transparent opacity-60" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#080808] via-transparent to-transparent opacity-80" />
         
         {/* Category badge */}
-        <div className="absolute left-4 top-4">
+        <div className="absolute left-6 top-6">
           <span
-            className={`inline-flex items-center rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-wider backdrop-blur-md ${categoryColors[post.category]}`}
+            className={`inline-flex items-center rounded-full px-4 py-1.5 text-[10px] font-bold uppercase tracking-widest backdrop-blur-xl ${categoryColors[post.category]}`}
           >
             {categoryLabels[post.category]}
           </span>
         </div>
       </div>
 
-      <div className="flex flex-1 flex-col p-6">
+      <div className="flex flex-1 flex-col p-8 pt-4">
         {/* Header/Date */}
-        <div className="flex items-center gap-3 text-[10px] font-bold uppercase tracking-widest text-[#64748b]">
+        <div className="flex items-center gap-3 text-[10px] font-bold uppercase tracking-[0.2em] text-gray-500">
           <span>{formatDate(post.date)}</span>
-          <span className="h-1 w-1 rounded-full bg-indigo-500/50" />
+          <span className="h-1 w-1 rounded-full bg-emerald-500/50" />
           <span>{post.readTime} min read</span>
         </div>
 
         {/* Title */}
-        <h2 className="mt-4 text-xl font-bold leading-tight text-white transition-colors group-hover:text-indigo-300">
+        <h2 className="mt-6 text-2xl font-bold leading-tight text-white transition-colors group-hover:text-emerald-400">
           {post.title}
         </h2>
 
         {/* Excerpt */}
-        <p className="mt-3 text-sm leading-relaxed text-[#94a3b8] line-clamp-2">
+        <p className="mt-4 text-[15px] leading-relaxed text-gray-400 line-clamp-2 font-medium">
           {post.excerpt}
         </p>
 
         {/* Footer/CTA */}
-        <div className="mt-auto pt-6">
-          <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-indigo-400 group-hover:text-indigo-300">
+        <div className="mt-auto pt-8">
+          <div className="inline-flex items-center gap-3 text-[11px] font-bold uppercase tracking-widest text-emerald-500 group-hover:text-emerald-400">
             Read Article
-            <svg
-              className="h-3 w-3 transition-transform duration-300 group-hover:translate-x-1"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2.5}
-                d="M17 8l4 4m0 0l-4 4m4-4H3"
-              />
-            </svg>
+            <div className="h-px w-8 bg-emerald-500/30 transition-all duration-300 group-hover:w-12 group-hover:bg-emerald-500" />
           </div>
         </div>
       </div>
